@@ -225,102 +225,96 @@
     <h2 class="location__title">
       Как нас найти
     </h2>
-    <address class="location__address">
-      Адрес
-<!--      Остановился на добавлении адреса котейки-->
-    </address>
+    <dl class="location__rows">
+      <dt class="location__row-name">
+        Адрес
+      </dt>
+      <dd class="location__row-content">
+        <address class="location__addres">
+          Санкт-Петербург, ул Большая Конюшенная, д 19
+        </address>
+      </dd>
+      <dt class="location__row-name">
+        Режим работы
+      </dt>
+      <dd class="location__row-content">
+        Ежедневно, с 9:00 до 20:00
+      </dd>
+      <dt class="location__row-name">
+        Телефон
+      </dt>
+      <dd class="location__row-content">
+        <a href="tel:88003335599">8 (800) 333-55-99</a>
+      </dd>
+      <dt class="location__row-name">
+        E-mail
+      </dt>
+      <dd class="location__row-content">
+        <a class="location__contact-link" href="mailto:info@cat-hotel.ru">
+          info@cat-hotel.ru
+        </a>
+      </dd>
+      <dt class="location__row-content">
+        Социальные сети
+      </dt>
+      <dd class="location__row-content">
+        <ul class="location__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              Facebook
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              Instagram
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              ВКонтакте
+            </a>
+          </li>
+        </ul>
+      </dd>
+    </dl>
+    <img class="location__map" src="img/logo.svg" width="63" height="52" alt="Местоположение гостиницы для питомцев.">
   </section>
 </main>
 <footer class="main-footer">
-  <dl class="main-footer__columns-list">
-    <div class="main-footer__column">
-      <dt class="main-footer__column-name">
-        О нас
-      </dt>
-      <dd class="main-footer__column-content">
-        <ul class="main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">
-              О компании
-            </a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">
-              Реквизиты
-            </a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </dd>
-    </div>
-    <div class="main-footer__column">
-      <dt class="main-footer__column-name">
-        Сервис
-      </dt>
-      <dd class="main-footer__column-content">
-        <ul class="main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">
-              Оплата
-            </a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">
-              Возврат
-            </a>
-          </li>
-        </ul>
-      </dd>
-    </div>
-    <div class="main-footer__column">
-      <dt class="main-footer__column-name">
-        Дополнительно
-      </dt>
-      <dd class="main-footer__column-content">
-        <ul class="main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">
-              Скидочная карта
-            </a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link" href="#">
-              Бонусы
-            </a>
-          </li>
-        </ul>
-      </dd>
-    </div>
-  </dl>
-  <ul class="main-footer__social social">
-    <li class="social__item">
-      <a class="social__link" href="#">
-        ВКонтакте
+  <a class="main-header__logo-link" href="#">
+    <img class="main-header__logo" src="img/logo.svg" width="63"
+         height="52" alt="Логотип гостиницы для котов и кошек.">
+  </a>
+  <ul class="main-header__navigation navigation">
+    <li class="navigation__item">
+      <a class="navigation__link" href="#">
+        Почему мы?
       </a>
     </li>
-    <li class="social__item">
-      <a class="social__link" href="#">
-        Facebook
+    <li class="navigation__item">
+      <a class="navigation__link" href="#">
+        Номера
       </a>
     </li>
-    <li class="social__item">
-      <a class="social__link" href="#">
-        Twitter
+    <li class="navigation__item">
+      <a class="navigation__link" href="#">
+        Отзывы
+      </a>
+    </li>
+    <li class="navigation__item">
+      <a class="navigation__link" href="#">
+        Как нас найти
       </a>
     </li>
   </ul>
-  <a class="main-footer__feedback-link" href="#">
-    Обратная связь
-   </a>
+  <div class="main-footer__copyright">
+    <p class="main-footer__column">
+      © 2019 Все права защищены
+    </p>
+    <p class="main-footer__column">
+      Политика конфиденциальности
+    </p>
+  </div>
 </footer>
 </body>
 </html>
