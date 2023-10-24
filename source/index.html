@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Котейка</title>
+</head>
+<body>
+<header class="main-header">
+  <nav class="main-header__navigation">
+    <a class="main-header__logo-link" href="#">
+      <img class="main-header__logo" src="img/logo.svg" width="63"
+           height="52" alt="Логотип гостиницы для котов и кошек.">
+    </a>
+    <ul class="main-header__navigation navigation">
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">
+          Почему мы?
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">
+          Номера
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">
+          Отзывы
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">
+          Как нас найти
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="main-page">
+  <h1 class="visually-hidden">
+    Главная страница гостиницы для котов и кошек.
+  </h1>
+  <section class="booking">
+    <h2 class="visually-hidden">
+      Бронирование.
+    </h2>
+    <address class="booking__location">
+      Санкт-Петербург
+    </address>
+    <p class="booking__company-name">
+      Котейка
+    </p>
+    <p class="booking__about">
+      Уютная гостиница для котов и кошек
+    </p>
+    <a class="booking__link" href="#">
+      Забронировать
+    </a>
+  </section>
+  <section class="about">
+    <h2 class="about__title">
+      Почему мы?
+    </h2>
+    <ul class="about__list">
+      <li class="about__item">
+        <h3 class="about__title">
+          Комфортная температура
+        </h3>
+        <img class="about__image" src="img/about/thermometer.svg" width="91" height="91" alt="Термометр.">
+        <p class="about__text">
+          Во всех номерах поддерживается комфортная температура в пределах 23 - 25 градусов. В каждом номере можно
+          дополнительно отрегулировать температуру.
+        </p>
+      </li>
+      <li class="about__item">
+        <h3 class="about__title">
+          Видеонаблюдение
+        </h3>
+        <img class="about__image" src="img/about/video-monitoring.svg" width="91" height="91"
+             alt="Камера видеонаблюдения.">
+        <p class="about__text">
+          Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем со своего смартфона или
+          компьютера.
+        </p>
+      </li>
+      <li class="about__item">
+        <h3 class="about__title">
+          Услуги Зоотакси
+        </h3>
+        <img class="about__image" src="img/about/taxi.svg" width="91" height="91" alt="Машина такси.">
+        <p class="about__text">
+          Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
+        </p>
+      </li>
+      <li class="about__item">
+        <h3 class="about__title">
+          Сбалансированное питание
+        </h3>
+        <img class="about__image" src="img/about/food.svg" width="91" height="91" alt="Миска с едой.">
+        <p class="about__text">
+          Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам.
+        </p>
+      </li>
+      <li class="about__item">
+        <h3 class="about__title">
+          Ежедневные прогулки
+        </h3>
+        <img class="about__image" src="img/about/cat.svg" width="91" height="91" alt="Кошка.">
+        <p class="about__text">
+          По вашему желанию мы выгуливаем вашего питомца два раза в день на специализированной закрытой территории.
+        </p>
+      </li>
+      <li class="about__item">
+        <h3 class="about__title">
+          Лучшие ветеринары
+        </h3>
+        <img class="about__image" src="img/about/thermometer.svg" width="91" height="91" alt="Термометр.">
+        <p class="about__text">
+          В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.
+        </p>
+      </li>
+    </ul>
+  </section>
+  <section class="rooms">
+    <h2 class="rooms__title">
+      Номера
+    </h2>
+    <form class="rooms__form" method="post" enctype="multipart/form-data" action="#" autocomplete="off">
+      <img class="rooms__image" src="img/rooms/photo-order-1.jpg" width="600" height="404" alt="Кот в домике.">
+      <fieldset class="rooms__inputs-set">
+        <legend class="rooms__title">
+          Забронировать номер
+        </legend>
+        <label class="rooms__input-wrapper">
+          <span class="visually-hidden">Имя пользователя.</span>
+          <input class="rooms__input" type="text" placeholder="Ваше имя">
+        </label>
+        <label class="rooms__input-wrapper">
+          <span class="visually-hidden">Имя Питомца.</span>
+          <input class="rooms__input" type="text" placeholder="Имя Питомца">
+        </label>
+        <label class="rooms__input-wrapper">
+          <span class="visually-hidden">Телефон.</span>
+          <input class="rooms__input" type="number" placeholder="Телефон">
+        </label>
+        <label class="rooms__input-wrapper">
+          <span class="visually-hidden">E-mail.</span>
+          <input class="rooms__input" type="email" placeholder="E-mail">
+        </label>
+      </fieldset>
+    </form>
+  </section>
+
+
+</main>
+<footer class="main-footer">
+  <dl class="main-footer__columns-list">
+    <div class="main-footer__column">
+      <dt class="main-footer__column-name">
+        О нас
+      </dt>
+      <dd class="main-footer__column-content">
+        <ul class="main-footer__list">
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              О компании
+            </a>
+          </li>
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              Реквизиты
+            </a>
+          </li>
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </dd>
+    </div>
+    <div class="main-footer__column">
+      <dt class="main-footer__column-name">
+        Сервис
+      </dt>
+      <dd class="main-footer__column-content">
+        <ul class="main-footer__list">
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              Оплата
+            </a>
+          </li>
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              Возврат
+            </a>
+          </li>
+        </ul>
+      </dd>
+    </div>
+    <div class="main-footer__column">
+      <dt class="main-footer__column-name">
+        Дополнительно
+      </dt>
+      <dd class="main-footer__column-content">
+        <ul class="main-footer__list">
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              Скидочная карта
+            </a>
+          </li>
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              Бонусы
+            </a>
+          </li>
+        </ul>
+      </dd>
+    </div>
+  </dl>
+  <ul class="main-footer__social social">
+    <li class="social__item">
+      <a class="social__link" href="#">
+        ВКонтакте
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="#">
+        Facebook
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="#">
+        Twitter
+      </a>
+    </li>
+  </ul>
+  <a class="main-footer__feedback-link" href="#">
+    Обратная связь
+   </a>
+</footer>
+</body>
+</html>
