@@ -121,54 +121,58 @@
         Эконом плюс.
       </h3>
       <img class="rooms__image" src="img/rooms/photo-order-1.jpg" width="600" height="404" alt="Кот в домике.">
-      <ul class="rooms__list">
-        <li class="rooms__item">
-          Площадь - 0,90 м2
-        </li>
-        <li class="rooms__item">
-          Размеры (ШхГхВ) — 90х100х180 см
-        </li>
-        <li class="rooms__item">
-          Цена за сутки: 200₽
-        </li>
-      </ul>
+      <dl class="rooms__list">
+        <dt class="rooms__term">
+          Площадь -
+        </dt>
+        <dd class="rooms__content">
+          0,90 м2
+        </dd>
+        <dt class="rooms__term">
+          Размеры (ШхГхВ) —
+        </dt>
+        <dd class="rooms__content">
+          90х100х180 см
+        </dd>
+        <dt class="rooms__term">
+          Цена за сутки:
+        </dt>
+        <dd class="rooms__content">
+          200 ₽
+        </dd>
+      </dl>
     </section>
     <section class="rooms__form-wrapper">
       <h3 class="rooms__form-wrapper-title">
         Забронировать номер
       </h3>
       <form class="rooms__form" method="post" enctype="multipart/form-data" action="#" autocomplete="off">
-        <fieldset class="rooms__inputs-set">
-          <legend class="rooms__title">
-          </legend>
-          <label class="rooms__input-wrapper">
-            <span class="visually-hidden">Имя пользователя.</span>
-            <input class="rooms__input" type="text" placeholder="Ваше имя">
-          </label>
-          <label class="rooms__input-wrapper">
-            <span class="visually-hidden">Имя Питомца.</span>
-            <input class="rooms__input" type="text" placeholder="Имя Питомца">
-          </label>
-          <label class="rooms__input-wrapper">
-            <span class="visually-hidden">Телефон.</span>
-            <input class="rooms__input" type="number" placeholder="Телефон">
-          </label>
-          <label class="rooms__input-wrapper">
-            <span class="visually-hidden">E-mail.</span>
-            <input class="rooms__input" type="email" placeholder="E-mail">
-          </label>
-        </fieldset>
-        <fieldset class="rooms__arrival-date">
-          Дата заезда
+        <label class="rooms__input-wrapper">
+          <span class="visually-hidden">Имя пользователя.</span>
+          <input class="rooms__input" type="text" placeholder="Ваше имя">
+        </label>
+        <label class="rooms__input-wrapper">
+          <span class="visually-hidden">Имя Питомца.</span>
+          <input class="rooms__input" type="text" placeholder="Имя Питомца">
+        </label>
+        <label class="rooms__input-wrapper">
+          <span class="visually-hidden">Телефон.</span>
+          <input class="rooms__input" type="tel" placeholder="Телефон">
+        </label>
+        <label class="rooms__input-wrapper">
+          <span class="visually-hidden">E-mail.</span>
+          <input class="rooms__input" type="email" placeholder="E-mail">
+        </label>
+        <p class="rooms__arrival">
           <label class="rooms__arrival">
-            <span>c</span>
+            <span>Дата заезда c</span>
             <input class="rooms__arrival-input" type="text" placeholder="26.01.2020">
           </label>
           <label class="rooms__departure">
             <span>по</span>
             <input class="rooms__arrival-input" type="text" placeholder="26.02.2020">
           </label>
-        </fieldset>
+        </p>
         <button class="rooms__submit" type="submit">Отправить заявку</button>
       </form>
     </section>
@@ -227,9 +231,7 @@
         Адрес
       </dt>
       <dd class="contacts__row-content">
-        <address class="contacts__addres">
-          Санкт-Петербург, ул Большая Конюшенная, д 19
-        </address>
+        Санкт-Петербург, ул Большая Конюшенная, д 19
       </dd>
       <dt class="contacts__row-name">
         Режим работы
@@ -274,7 +276,7 @@
         </ul>
       </dd>
     </dl>
-    <img class="contacts__map" src="img/logo.svg" width="63" height="52" alt="Местоположение гостиницы для питомцев.">
+    <img class="contacts__map" src="img/contacts/map.jpg" width="798" height="580" alt="Местоположение гостиницы для питомцев.">
   </section>
   <section class="footer-nav">
     <h2 class="visually-hidden">
@@ -306,14 +308,10 @@
         </a>
       </li>
     </ul>
-    <div class="main-footer__copyright">
-      <p class="main-footer__column">
-        © 2019 Все права защищены
-      </p>
-      <p class="main-footer__column">
-        Политика конфиденциальности
-      </p>
-    </div>
+    <p class="main-footer__copyright">
+      © 2019 Все права защищены
+    </p>
+    <a class="main-footer__privacy" href="#">Политика конфиденциальности</a>
   </section>
 </footer>
 </body>
