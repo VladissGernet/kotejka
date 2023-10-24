@@ -148,10 +148,88 @@
           <input class="rooms__input" type="email" placeholder="E-mail">
         </label>
       </fieldset>
+      <fieldset class="rooms__arrival-date">
+        Дата заезда
+        <label class="rooms__arrival">
+          <span>c</span>
+          <input class="rooms__arrival-input" type="text" placeholder="26.01.2020">
+        </label>
+        <label class="rooms__departure">
+          <span>по</span>
+          <input class="rooms__arrival-input" type="text" placeholder="26.02.2020">
+        </label>
+      </fieldset>
+      <dl class="rooms__column">
+        <dt class="rooms__title">Эконом плюс</dt>
+        <dd class="rooms__column-content">
+          <ul class="rooms__list">
+            <li class="rooms__item">
+              Площадь - 0,90 м2
+            </li>
+            <li class="rooms__item">
+              Размеры (ШхГхВ) — 90х100х180 см
+            </li>
+            <li class="rooms__item">
+              Цена за сутки: 200₽
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <button class="rooms__submit" type="submit">Отправить заявку</button>
     </form>
   </section>
-
-
+  <section class="reviews">
+    <h2 class="reviews__title">
+      Отзывы
+    </h2>
+    <ul class="reviews__list">
+      <li class="reviews__item">
+        <blockquote class="reviews__content">
+          <p class="reviews__text">
+            Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день
+            высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!
+          </p>
+          <cite class="reviews__user">
+            Валерия Гришаева
+          </cite>
+          <time class="reviews__date" datetime="2019-11-15">15 ноября, 2019</time>
+        </blockquote>
+      </li>
+      <li class="reviews__item">
+        <blockquote class="reviews__content">
+          <p class="reviews__text">
+            Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В
+            “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.
+          </p>
+          <cite class="reviews__user">
+            Екатерина Минаева
+          </cite>
+          <time class="reviews__date" datetime="2019-10-10">10 октября, 2019</time>
+        </blockquote>
+      </li>
+      <li class="reviews__item">
+        <blockquote class="reviews__content">
+          <p class="reviews__text">
+            Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка”
+            отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.
+          </p>
+          <cite class="reviews__user">
+            Павел Нечаев
+          </cite>
+          <time class="reviews__date" datetime="2019-08-02">2 августа, 2019</time>
+        </blockquote>
+      </li>
+    </ul>
+  </section>
+  <section class="location">
+    <h2 class="location__title">
+      Как нас найти
+    </h2>
+    <address class="location__address">
+      Адрес
+<!--      Остановился на добавлении адреса котейки-->
+    </address>
+  </section>
 </main>
 <footer class="main-footer">
   <dl class="main-footer__columns-list">
