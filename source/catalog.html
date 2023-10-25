@@ -38,8 +38,67 @@
 </header>
 <main class="catalog">
   <h1 class="visually-hidden">
-    Наши номера.
+    Страница каталога гостиницы для животных «Котейка».
   </h1>
+  <section class="rooms">
+    <h2 class="rooms__title">
+      Наши номера
+    </h2>
+    <label class="visually-hidden" for="rooms-select">
+      Сортировка карточек номеров.
+    </label>
+    <select class="rooms__select" id="rooms-select">
+      <option class="rooms__option" value="area">По площади</option>
+    </select>
+    <section class="rooms__filter">
+      <h3 class="visually-hidden">
+        Фильтр номеров.
+      </h3>
+      <form class="rooms__form filter" method="post" enctype="multipart/form-data" action="#" autocomplete="off">
+        <fieldset class="filter__price">
+          <fieldset>
+            <legend>Цена за сутки, <span>₽</span></legend>
+            <label>от<input type="text" value="100"></label>
+            <label>до<input type="text" value="600"></label>
+          </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend>Площадь</legend>
+          <label><input type="checkbox" name="area" checked value="0.63">0,63 м2</label>
+          <label><input type="checkbox" name="area" checked value="0.90">0,90 м2</label>
+          <label><input type="checkbox" name="area" checked value="1.13">1,13 м2</label>
+          <label><input type="checkbox" name="area" checked value="1.56">1,56 м2</label>
+          <label><input type="checkbox" name="area" checked value="2.56">2,56 м2</label>
+          <label><input type="checkbox" name="area" checked value="2.88">2,88 м2</label>
+        </fieldset>
+        <fieldset>
+          <legend>Оснащение номера</legend>
+          <label><input type="checkbox" name="equipment" checked value="empty">Пустой номер</label>
+          <label><input type="checkbox" name="equipment" checked value="sofa">Лежак</label>
+          <label><input type="checkbox" name="equipment" checked value="car-tree">Когтеточка</label>
+          <label><input type="checkbox" name="equipment" checked value="toy">Игровой-комплекс</label>
+          <label><input type="checkbox" name="equipment" checked value="house">Домик</label>
+        </fieldset>
+        <button type="reset">Сбросить фильтр</button>
+      </form>
+    </section>
+    <section class="rooms__cards cards">
+      <h3 class="visually-hidden">
+        Карточки номеров.
+      </h3>
+      <ul class="cards__list">
+        <li class="cards__item">
+          <article class="cards__content">
+            <h4 class="cards__titile">
+              Эконом
+            </h4>
+<!--            Остановился на создании карточек товаров.-->
+<!--            добавить изображение, далее список.-->
+          </article>
+        </li>
+      </ul>
+    </section>
+  </section>
 </main>
 <footer class="main-footer">
   <section class="contacts">
