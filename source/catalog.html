@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Номера гостиницы для котов и кошек «Котейка»</title>
+  <title>Каталог гостиницы для котов и кошек «Котейка»</title>
 </head>
 <body>
 <header class="main-header">
   <nav class="main-header__navigation">
-    <a class="main-header__logo-link" href="#">
+    <a class="main-header__logo-link" href="index.html">
       <img class="main-header__logo" src="img/logo.svg" width="63"
            height="52" alt="Логотип гостиницы для котов и кошек.">
     </a>
@@ -38,245 +38,328 @@
 </header>
 <main class="catalog">
   <h1 class="visually-hidden">
-    Страница каталога гостиницы для животных «Котейка».
+    Наши номера
   </h1>
-  <section class="rooms">
-    <h2 class="rooms__title">
-      Наши номера
+  <section class="filter">
+    <h2 class="visually-hidden">
+      Фильтр номеров.
     </h2>
-    <label class="visually-hidden" for="rooms-select">
-      Сортировка карточек номеров.
-    </label>
-    <select class="rooms__select" id="rooms-select">
-      <option class="rooms__option" value="area">По площади</option>
-    </select>
-    <section class="rooms__filter">
-      <h3 class="visually-hidden">
-        Фильтр номеров.
-      </h3>
-      <form class="rooms__form filter" method="post" enctype="multipart/form-data" action="#" autocomplete="off">
-        <fieldset class="filter__price">
-          <fieldset>
-            <legend>Цена за сутки, <span>₽</span></legend>
-            <label>от<input type="text" value="100"></label>
-            <label>до<input type="text" value="600"></label>
-          </fieldset>
-        </fieldset>
+    <form class="filter__form" method="post" enctype="multipart/form-data" action="#" autocomplete="off">
+      <fieldset class="filter__price">
         <fieldset>
-          <legend>Площадь</legend>
-          <label><input type="checkbox" name="area" checked value="0.63">0,63 м2</label>
-          <label><input type="checkbox" name="area" checked value="0.90">0,90 м2</label>
-          <label><input type="checkbox" name="area" checked value="1.13">1,13 м2</label>
-          <label><input type="checkbox" name="area" checked value="1.56">1,56 м2</label>
-          <label><input type="checkbox" name="area" checked value="2.56">2,56 м2</label>
-          <label><input type="checkbox" name="area" checked value="2.88">2,88 м2</label>
+          <legend>Цена за сутки, <span>₽</span></legend>
+          <label for="filters-form-price-from" class="visually-hidden">Цена за сутки, от</label>
+          <input type="text" name="filters-form-price-from" id="filters-form-price-from" placeholder="от 100" value="100">
+          <label for="filters-form-price-to" class="visually-hidden">Цена за сутки, до</label>
+          <input type="text" name="filters-form-price-to" id="filters-form-price-to" placeholder="до 600" value="600">
         </fieldset>
-        <fieldset>
-          <legend>Оснащение номера</legend>
-          <label><input type="checkbox" name="equipment" checked value="empty">Пустой номер</label>
-          <label><input type="checkbox" name="equipment" checked value="sofa">Лежак</label>
-          <label><input type="checkbox" name="equipment" checked value="car-tree">Когтеточка</label>
-          <label><input type="checkbox" name="equipment" checked value="toy">Игровой-комплекс</label>
-          <label><input type="checkbox" name="equipment" checked value="house">Домик</label>
-        </fieldset>
-        <button type="reset">Сбросить фильтр</button>
-      </form>
-    </section>
-    <section class="rooms__cards cards">
-      <h3 class="visually-hidden">
-        Карточки номеров.
-      </h3>
-      <ul class="cards__list">
-        <li class="cards__item">
-          <article class="cards__content">
-            <h4 class="cards__title">
-              Эконом
-            </h4>
-            <img class="cards__image" src="img/cards/card-image/photo-room-2.jpg" width="270" height="185"
-                 alt="Фото эконом номера.">
-            <dl class="cards__options">
-              <dt class="cards__option-title">
-                Размеры (ШхГхВ) -
-              </dt>
-              <dd class="cards__option-content">
-                90х70х180 см
-              </dd>
-              <dt class="cards__option-title">
-                Площадь -
-              </dt>
-              <dd class="cards__option-content">
-                0,63 м2
-              </dd>
-              <dt class="cards__option-title">
-                Оснащение номера
-              </dt>
-              <dd class="cards__option-content">
+      </fieldset>
+      <fieldset>
+        <legend>Площадь</legend>
+        <label for="filters-form-area-value-1">0,63 м2</label>
+        <input type="checkbox" name="filters-form-area" id="filters-form-area-value-1" checked value="0.63">
+        <label for="filters-form-area-value-2">0,90 м2</label>
+        <input type="checkbox" name="filters-form-area" id="filters-form-area-value-2" checked value="0.90">
+        <label for="filters-form-area-value-3">1,13 м2</label>
+        <input type="checkbox" name="filters-form-area" id="filters-form-area-value-3" checked value="1.13">
+        <label for="filters-form-area-value-4">1,56 м2</label>
+        <input type="checkbox" name="filters-form-area" id="filters-form-area-value-4" checked value="1.56">
+        <label for="filters-form-area-value-5">2,56 м2</label>
+        <input type="checkbox" name="filters-form-area" id="filters-form-area-value-5" checked value="2.56">
+        <label for="filters-form-area-value-6">2,88 м2</label>
+        <input type="checkbox" name="filters-form-area" id="filters-form-area-value-6" checked value="2.88">
+      </fieldset>
+      <fieldset>
+        <legend>Оснащение номера</legend>
+        <label for="filters-form-equipment-value-empty">Пустой номер</label>
+        <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-empty" checked value="empty">
+        <label for="filters-form-equipment-value-sofa">Лежак</label>
+        <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-sofa" checked value="sofa">
+        <label for="filters-form-equipment-value-car-tree">Когтеточка</label>
+        <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-car-tree" checked value="car-tree">
+        <label for="filters-form-equipment-value-toy">Игровой-комплекс</label>
+        <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-toy" checked value="toy">
+        <label for="filters-form-equipment-value-house">Домик</label>
+        <input type="checkbox" name="filters-form-equipment" id="filters-form-equipment-value-house" checked value="house">
+      </fieldset>
+      <button type="reset">Сбросить фильтр</button>
+    </form>
+  </section>
+  <section class="cards">
+    <h2 class="visually-hidden">
+      Каталог.
+    </h2>
+    <div class="cards__select-wrapper">
+      <label class="visually-hidden" for="rooms-select">
+        Сортировка карточек номеров.
+      </label>
+      <select class="rooms__select" id="rooms-select">
+        <option class="rooms__option" value="area">По площади</option>
+      </select>
+    </div>
+    <ul class="cards__list">
+      <li class="cards__item">
+        <h3 class="cards__title">
+          Эконом
+        </h3>
+        <img class="cards__image" src="img/cards/card-image/photo-room-2.jpg" width="270" height="185"
+             alt="Фото эконом номера.">
+        <dl class="cards__options">
+          <dt class="cards__option-title">
+            Размеры (ШхГхВ) -
+          </dt>
+          <dd class="cards__option-content">
+            90х70х180 см
+          </dd>
+          <dt class="cards__option-title">
+            Площадь -
+          </dt>
+          <dd class="cards__option-content">
+            0,63 м2
+          </dd>
+          <dt class="cards__option-title">
+            Оснащение номера
+          </dt>
+          <dd class="cards__option-content">
+            <ul class="cards__equipment-list">
+              <li class="cards__equipment-item">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/empty.svg" width="16"
                      height="16" alt="Без оснащения.">
-              </dd>
-              <dt class="cards__option-title">
-                Цена за сутки:
-              </dt>
-              <dd class="cards__option-content">
-                100₽
-              </dd>
-            </dl>
-          </article>
-          <a class="cards__button" href="#">
-            Забронировать
-          </a>
-        </li>
-        <li class="cards__item">
-          <article class="cards__content">
-            <h4 class="cards__title">
-              Эконом плюс
-            </h4>
-            <img class="cards__image" src="img/cards/card-image/photo-room-3.jpg" width="270" height="185"
-                 alt="Фото эконом плюс номера.">
-            <dl class="cards__options">
-              <dt class="cards__option-title">
-                Размеры (ШхГхВ) -
-              </dt>
-              <dd class="cards__option-content">
-                90х100х180 см
-              </dd>
-              <dt class="cards__option-title">
-                Площадь -
-              </dt>
-              <dd class="cards__option-content">
-                0,90 м2
-              </dd>
-              <dt class="cards__option-title">
-                Оснащение номера
-              </dt>
-              <dd class="cards__option-content">
+              </li>
+            </ul>
+          </dd>
+          <dt class="cards__option-title">
+            Цена за сутки:
+          </dt>
+          <dd class="cards__option-content">
+            100₽
+          </dd>
+        </dl>
+        <a class="cards__button" href="#">
+          Забронировать
+        </a>
+      </li>
+      <li class="cards__item">
+        <h3 class="cards__title">
+          Эконом плюс
+        </h3>
+        <img class="cards__image" src="img/cards/card-image/photo-room-3.jpg" width="270" height="185"
+             alt="Фото эконом плюс номера.">
+        <dl class="cards__options">
+          <dt class="cards__option-title">
+            Размеры (ШхГхВ) -
+          </dt>
+          <dd class="cards__option-content">
+            90х100х180 см
+          </dd>
+          <dt class="cards__option-title">
+            Площадь -
+          </dt>
+          <dd class="cards__option-content">
+            0,90 м2
+          </dd>
+          <dt class="cards__option-title">
+            Оснащение номера
+          </dt>
+          <dd class="cards__option-content">
+            <ul class="cards__equipment-list">
+              <li class="cards__equipment-item">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/sofa.svg" width="16"
                      height="16" alt="Лежанка для кота.">
+              </li>
+              <li class="cards__equipment-item">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/cat-tree.svg" width="16"
                      height="16" alt="Когтеточка.">
-              </dd>
-              <dt class="cards__option-title">
-                Цена за сутки:
-              </dt>
-              <dd class="cards__option-content">
-                200₽
-              </dd>
-            </dl>
-          </article>
-          <a class="cards__button" href="#">
-            Забронировать
-          </a>
-        </li>
-        <li class="cards__item">
-          <article class="cards__content">
-            <h4 class="cards__title">
-              Комфорт
-            </h4>
-            <img class="cards__image" src="img/cards/card-image/photo-room-6.jpg" width="270" height="185"
-                 alt="Фото комфорт номера.">
-            <dl class="cards__options">
-              <dt class="cards__option-title">
-                Размеры (ШхГхВ) -
-              </dt>
-              <dd class="cards__option-content">
-                100х125х180 см
-              </dd>
-              <dt class="cards__option-title">
-                Площадь -
-              </dt>
-              <dd class="cards__option-content">
-                1,13 м2
-              </dd>
-              <dt class="cards__option-title">
-                Оснащение номера
-              </dt>
-              <dd class="cards__option-content">
+              </li>
+            </ul>
+          </dd>
+          <dt class="cards__option-title">
+            Цена за сутки:
+          </dt>
+          <dd class="cards__option-content">
+            200₽
+          </dd>
+        </dl>
+        <a class="cards__button" href="#">
+          Забронировать
+        </a>
+      </li>
+      <li class="cards__item">
+        <h3 class="cards__title">
+          Комфорт
+        </h3>
+        <img class="cards__image" src="img/cards/card-image/photo-room-6.jpg" width="270" height="185"
+             alt="Фото комфорт номера.">
+        <dl class="cards__options">
+          <dt class="cards__option-title">
+            Размеры (ШхГхВ) -
+          </dt>
+          <dd class="cards__option-content">
+            100х125х180 см
+          </dd>
+          <dt class="cards__option-title">
+            Площадь -
+          </dt>
+          <dd class="cards__option-content">
+            1,13 м2
+          </dd>
+          <dt class="cards__option-title">
+            Оснащение номера
+          </dt>
+          <dd class="cards__option-content">
+            <ul class="cards__equipment-list">
+              <li class="cards__equipment-item">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/sofa.svg" width="16"
                      height="16" alt="Лежанка для кота.">
+              </li>
+              <li class="cards__equipment-item">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/cat-tree.svg" width="16"
                      height="16" alt="Когтеточка.">
+              </li>
+              <li class="cards__equipment-item">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/toy.svg" width="16"
                      height="16" alt="Игрушки.">
-              </dd>
-              <dt class="cards__option-title">
-                Цена за сутки:
-              </dt>
-              <dd class="cards__option-content">
-                250₽
-              </dd>
-            </dl>
-          </article>
-          <a class="cards__button" href="#">
-            Забронировать
-          </a>
-        </li>
-        <li class="cards__item">
-          <article class="cards__content">
-            <h4 class="cards__title">
-              Сьют
-            </h4>
-            <img class="cards__image" src="img/cards/card-image/photo-room-4.jpg" width="270" height="185"
-                 alt="Фото сьют номера.">
-            <dl class="cards__options">
-              <dt class="cards__option-title">
-                Размеры (ШхГхВ) -
-              </dt>
-              <dd class="cards__option-content">
-                125х125х180 см
-              </dd>
-              <dt class="cards__option-title">
-                Площадь -
-              </dt>
-              <dd class="cards__option-content">
-                1,56 м2
-              </dd>
-              <dt class="cards__option-title">
-                Оснащение номера
-              </dt>
-              <dd class="cards__option-content">
+              </li>
+            </ul>
+          </dd>
+          <dt class="cards__option-title">
+            Цена за сутки:
+          </dt>
+          <dd class="cards__option-content">
+            250₽
+          </dd>
+        </dl>
+        <a class="cards__button" href="#">
+          Забронировать
+        </a>
+      </li>
+      <li class="cards__item">
+        <h3 class="cards__title">
+          Сьют
+        </h3>
+        <img class="cards__image" src="img/cards/card-image/photo-room-4.jpg" width="270" height="185"
+             alt="Фото сьют номера.">
+        <dl class="cards__options">
+          <dt class="cards__option-title">
+            Размеры (ШхГхВ) -
+          </dt>
+          <dd class="cards__option-content">
+            125х125х180 см
+          </dd>
+          <dt class="cards__option-title">
+            Площадь -
+          </dt>
+          <dd class="cards__option-content">
+            1,56 м2
+          </dd>
+          <dt class="cards__option-title">
+            Оснащение номера
+          </dt>
+          <dd class="cards__option-content">
+            <ul class="cards__equipment-list">
+              <li class="cards__equipment-item">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/sofa.svg" width="16"
                      height="16" alt="Лежанка для кота.">
+              </li>
+              <li class="cards__equipment-item">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/cat-tree.svg" width="16"
                      height="16" alt="Когтеточка.">
+              </li>
+              <li class="cards__equipment-item">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/toy.svg" width="16"
                      height="16" alt="Игрушки.">
-              </dd>
-              <dt class="cards__option-title">
-                Цена за сутки:
-              </dt>
-              <dd class="cards__option-content">
-                350₽
-              </dd>
-            </dl>
-          </article>
-          <a class="cards__button" href="#">
-            Забронировать
-          </a>
-        </li>
-        <li class="cards__item">
-          <article class="cards__content">
-            <h4 class="cards__title">
-              Люкс
-            </h4>
-            <img class="cards__image" src="img/cards/card-image/photo-room-1.jpg" width="270" height="185"
-                 alt="Фото люкс номера.">
-            <dl class="cards__options">
-              <dt class="cards__option-title">
-                Размеры (ШхГхВ) -
-              </dt>
-              <dd class="cards__option-content">
-                160х160х180 см
-              </dd>
-              <dt class="cards__option-title">
-                Площадь -
-              </dt>
-              <dd class="cards__option-content">
-                2,56 м2
-              </dd>
-              <dt class="cards__option-title">
-                Оснащение номера
-              </dt>
-              <dd class="cards__option-content">
+              </li>
+            </ul>
+          </dd>
+          <dt class="cards__option-title">
+            Цена за сутки:
+          </dt>
+          <dd class="cards__option-content">
+            350₽
+          </dd>
+        </dl>
+        <a class="cards__button" href="#">
+          Забронировать
+        </a>
+      </li>
+      <li class="cards__item">
+        <h3 class="cards__title">
+          Люкс
+        </h3>
+        <img class="cards__image" src="img/cards/card-image/photo-room-1.jpg" width="270" height="185"
+             alt="Фото люкс номера.">
+        <dl class="cards__options">
+          <dt class="cards__option-title">
+            Размеры (ШхГхВ) -
+          </dt>
+          <dd class="cards__option-content">
+            160х160х180 см
+          </dd>
+          <dt class="cards__option-title">
+            Площадь -
+          </dt>
+          <dd class="cards__option-content">
+            2,56 м2
+          </dd>
+          <dt class="cards__option-title">
+            Оснащение номера
+          </dt>
+          <dd class="cards__option-content">
+            <ul class="cards__equipment-list">
+              <li class="cards__equipment-item">
+                <img class="cards__room-equipment-icon" src="img/cards/room-equipment/sofa.svg" width="16"
+                     height="16" alt="Лежанка для кота.">
+              </li>
+              <li class="cards__equipment-item">
+                <img class="cards__room-equipment-icon" src="img/cards/room-equipment/cat-tree.svg" width="16"
+                     height="16" alt="Когтеточка.">
+              </li>
+              <li class="cards__equipment-item">
+                <img class="cards__room-equipment-icon" src="img/cards/room-equipment/toy.svg" width="16"
+                     height="16" alt="Игрушки.">
+              </li>
+              <li class="cards__equipment-item">
+                <img class="cards__room-equipment-icon" src="img/cards/room-equipment/house.svg" width="16"
+                     height="16" alt="Кошачий домик.">
+              </li>
+            </ul>
+          </dd>
+          <dt class="cards__option-title">
+            Цена за сутки:
+          </dt>
+          <dd class="cards__option-content">
+            500₽
+          </dd>
+        </dl>
+        <a class="cards__button" href="#">
+          Забронировать
+        </a>
+      </li>
+      <li class="cards__item">
+        <h3 class="cards__title">
+          Супер-Люкс
+        </h3>
+        <img class="cards__image" src="img/cards/card-image/photo-room-2.jpg" width="270" height="185"
+             alt="Фото супер-люкс номера.">
+        <dl class="cards__options">
+          <dt class="cards__option-title">
+            Размеры (ШхГхВ) -
+          </dt>
+          <dd class="cards__option-content">
+            180х160х180 см
+          </dd>
+          <dt class="cards__option-title">
+            Площадь -
+          </dt>
+          <dd class="cards__option-content">
+            2,88 м2
+          </dd>
+          <dt class="cards__option-title">
+            Оснащение номера
+          </dt>
+          <dd class="cards__option-content">
+            <ul class="cards__equipment-list">
+              <li class="cards__equipment-item">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/sofa.svg" width="16"
                      height="16" alt="Лежанка для кота.">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/cat-tree.svg" width="16"
@@ -285,72 +368,30 @@
                      height="16" alt="Игрушки.">
                 <img class="cards__room-equipment-icon" src="img/cards/room-equipment/house.svg" width="16"
                      height="16" alt="Кошачий домик.">
-              </dd>
-              <dt class="cards__option-title">
-                Цена за сутки:
-              </dt>
-              <dd class="cards__option-content">
-                500₽
-              </dd>
-            </dl>
-          </article>
-          <a class="cards__button" href="#">
-            Забронировать
-          </a>
-        </li>
-        <li class="cards__item">
-          <article class="cards__content">
-            <h4 class="cards__title">
-              Супер-Люкс
-            </h4>
-            <img class="cards__image" src="img/cards/card-image/photo-room-2.jpg" width="270" height="185"
-                 alt="Фото супер-люкс номера.">
-            <dl class="cards__options">
-              <dt class="cards__option-title">
-                Размеры (ШхГхВ) -
-              </dt>
-              <dd class="cards__option-content">
-                180х160х180 см
-              </dd>
-              <dt class="cards__option-title">
-                Площадь -
-              </dt>
-              <dd class="cards__option-content">
-                2,88 м2
-              </dd>
-              <dt class="cards__option-title">
-                Оснащение номера
-              </dt>
-              <dd class="cards__option-content">
-                <img class="cards__room-equipment-icon" src="img/cards/room-equipment/sofa.svg" width="16"
-                     height="16" alt="Лежанка для кота.">
-                <img class="cards__room-equipment-icon" src="img/cards/room-equipment/cat-tree.svg" width="16"
-                     height="16" alt="Когтеточка.">
-                <img class="cards__room-equipment-icon" src="img/cards/room-equipment/toy.svg" width="16"
-                     height="16" alt="Игрушки.">
-                <img class="cards__room-equipment-icon" src="img/cards/room-equipment/house.svg" width="16"
-                     height="16" alt="Кошачий домик.">
-              </dd>
-              <dt class="cards__option-title">
-                Цена за сутки:
-              </dt>
-              <dd class="cards__option-content">
-                600₽
-              </dd>
-            </dl>
-          </article>
-          <a class="cards__button" href="#">
-            Забронировать
-          </a>
-        </li>
-      </ul>
-    </section>
+              </li>
+            </ul>
+          </dd>
+          <dt class="cards__option-title">
+            Цена за сутки:
+          </dt>
+          <dd class="cards__option-content">
+            600₽
+          </dd>
+        </dl>
+        <a class="cards__button" href="#">
+          Забронировать
+        </a>
+      </li>
+    </ul>
   </section>
   <section class="promo">
-    <h2 class="promo__title">
-      Каждый 7-й день
-      бесплатно!
+    <h2 class="visually-hidden">
+      Акции и предложения.
     </h2>
+    <p class="promo__slogan">
+      Каждый 7-й день
+      <strong>бесплатно!</strong>
+    </p>
     <p class="promo__text">
       Акция действует при размещении
       в номерах “Люкс” и “Супер-Люкс”
@@ -421,7 +462,7 @@
     <h2 class="visually-hidden">
       Дополнительная навигация по сайту.
     </h2>
-    <a class="main-header__logo-link" href="#">
+    <a class="main-header__logo-link" href="index.html">
       <img class="main-header__logo" src="img/logo.svg" width="63"
            height="52" alt="Логотип гостиницы для котов и кошек.">
     </a>
