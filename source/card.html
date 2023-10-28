@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Супер-Люкс</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Карточка номера гостиницы для котов и кошек «Котейка»</title>
 </head>
 <body>
 <header class="main-header">
@@ -36,15 +37,16 @@
   </nav>
 </header>
 <main class="card">
+  <h1 class="visually-hidden">Карточка номера Супер-Люкс</h1>
   <section class="card-content">
-    <h1 class="card-content__title">
+    <h2 class="card-content__title">
       Супер-Люкс
-    </h1>
+    </h2>
+    <li class="card-content__main-image">
+      <img class="card__image" src="img/card/main-photos/photo-full.jpg" width="500" height="396"
+           alt="Фото супер-люкс номера.">
+    </li>
     <ul class="card-content__list">
-      <li class="card-content__item">
-        <img class="card__image" src="img/card/main-photos/photo-full.jpg" width="500" height="396"
-             alt="Фото супер-люкс номера.">
-      </li>
       <li class="card-content__item">
         <img class="card__image" src="img/card/additional-photos/photo-1.jpg" width="70" height="112"
              alt="Дополнительное фото супер-люкс номера.">
@@ -76,26 +78,10 @@
       </dt>
       <dd class="card__option-content">
         <ul class="card__equipment-list">
-          <li class="card__equipment-item">
-            <img class="card__room-equipment-icon" src="img/cards/room-equipment/sofa.svg" width="16"
-                 height="16" alt="Лежанка для кота.">
-            <span class="card__equipment-description">Лежак</span>
-          </li>
-          <li class="card__equipment-item">
-            <img class="card__room-equipment-icon" src="img/cards/room-equipment/cat-tree.svg" width="16"
-                 height="16" alt="Когтеточка.">
-            <span class="card__equipment-description">Домик</span>
-          </li>
-          <li class="card__equipment-item">
-            <img class="card__room-equipment-icon" src="img/cards/room-equipment/toy.svg" width="16"
-                 height="16" alt="Игрушки.">
-            <span class="card__equipment-description">Игровой комплекс - 3 яруса</span>
-          </li>
-          <li class="card__equipment-item">
-            <img class="card__room-equipment-icon" src="img/cards/room-equipment/house.svg" width="16"
-                 height="16" alt="Кошачий домик.">
-            <span class="card__equipment-description">Когтеточка</span>
-          </li>
+          <li class="card__equipment-item card__equipment-item-sofa">Лежак</li>
+          <li class="card__equipment-item card__equipment-item-house">Домик</li>
+          <li class="card__equipment-item card__equipment-item-toy">Игровой комплекс - 3 яруса</li>
+          <li class="card__equipment-item card__equipment-item-cat-tree">Когтеточка</li>
         </ul>
       </dd>
       <dt class="card__option-title">
